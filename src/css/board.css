@@ -1,0 +1,133 @@
+
+
+.spacer2 {
+  width: 100px;
+  height: 200px;
+}
+
+.board-wrapper {
+  position: relative;
+  border: 1px solid red;
+  --drop-area-height: 50px;
+}
+
+.drop-area {
+  height: var(--drop-area-height);
+  width: var(--board-width);
+}
+
+.board-wrapper .board-img {
+  border-radius: 30px;
+  border: 3px solid black;
+  box-shadow: 0 10px black;
+}
+
+.board-wrapper .board-img:hover {
+  cursor: pointer;
+}
+
+.token {
+  z-index: -1;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: red;
+  top: 0;
+}
+
+.timer {
+  background-color: var(--red);
+  transition: color 100ms linear;
+  width: 200px;
+  height: 120px;
+  border: 3px solid black;
+  box-shadow: 0 10px black;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  text-align: center;
+  color: white;
+}
+
+.timer .tip {
+  position: absolute;
+  top: -53px;
+  left: -5px;
+  color: var(--red)
+}
+
+.timer .player-turn {
+  display: block;
+  margin-top: 5px;
+}
+
+.timer .player-turn-timer {
+  display: block;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.undo-redo-button {
+  position: absolute;
+  background-color: antiquewhite;
+  padding: 10px 10px;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  font-size: 15px;
+  border: 3px solid black;
+  box-shadow: 0 10px black;
+  color: black;
+}
+
+.undo-redo-button.left {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  bottom: -95px;
+  left: 70px;
+}
+
+.undo-redo-button.right {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  bottom: -95px;
+  right: 70px;
+}
+
+.undo-redo-button:hover {
+  /* color: rgb(100, 167, 0); */
+  border: 3px solid greenyellow;
+  cursor: pointer;
+  /* box-shadow: 0 10px rgb(100, 167, 0); */
+}
+
+/* .undo-redo-button:hover .arrow {
+  filter: invert(83%) sepia(52%) saturate(659%) hue-rotate(33deg) brightness(92%) contrast(91%);
+} */
+
+.undo-redo-button.clicked {
+  bottom: -105px;
+  box-shadow: none;
+}
+
+
+.undo-redo-button .arrow {
+  height: 50px;
+}
+
+.undo-redo-button.left .arrow {
+  margin-right: 10px;
+}
+
+.undo-redo-button.right .arrow {
+  margin-left: 10px;
+  transform: rotate(180deg);
+}

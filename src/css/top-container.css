@@ -1,0 +1,30 @@
+.top-container {
+  display: flex;
+  position: relative;
+  margin: auto;
+  max-width: var(--board-width);
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.top-container .thing {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60px;
+}
+
+.settings-wrapper {
+  position: relative;
+}
+
+
+.circle-small {
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  margin: 2px;
+  border-radius: 50%;
+  box-shadow: 0 2px black;
+}
