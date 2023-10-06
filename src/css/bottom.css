@@ -1,0 +1,10 @@
+
+.table {
+  z-index: -1;
+  position: relative;
+  height: 500px;
+  top: -50px;
+  background-color: var(--dark-purple);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}

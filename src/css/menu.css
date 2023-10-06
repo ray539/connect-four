@@ -1,0 +1,133 @@
+.menu {
+  max-width: fit-content;
+  background-color: rgb(233, 210, 255);
+  border: 3px solid black;
+  border-radius: 10px;
+  position: absolute;
+  top: 3em;
+  z-index: 1;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.1s linear;
+}
+
+.menu .message {
+  z-index: 0;
+  padding: 0.5em;
+  font-size: 20px;
+  margin-top: -2.8em;
+  opacity: 0;
+  transition: all 0.05s linear;
+}
+
+.menu .message .icon {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.menu .message.show {
+  margin-top: 0.2em;
+  opacity: 1;
+}
+
+.menu.show {
+  opacity: 1;
+}
+
+.menu ul {
+  padding: 0;
+  margin: 0;
+}
+
+.menu li:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.menu li {
+  list-style-type: none;
+  padding: 1.5em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(208, 158, 255);
+  font-size: 20px;
+}
+
+.menu li:hover {
+  background-color: rgb(208, 158, 255);
+}
+
+.number-input {
+  height: 2em;
+  width: 2em;
+  margin-left: 20px;
+}
+
+.checkbox {
+  height: 1.5em;
+  width: 1.5em;
+  margin: 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-container .up-arrow {
+  z-index: 2;
+  cursor: pointer;
+  margin: 1em;
+}
+
+.button-container .apply {
+  z-index: 2;
+}
+
+.button-container .up-arrow:hover {
+  filter: invert(62%) sepia(52%) saturate(883%) hue-rotate(216deg) brightness(102%) contrast(104%);
+}
+
+.timer-duration-wrapper {
+  position: relative;
+}
+
+.popout:hover {
+  background-color: rgb(208, 158, 255);
+  border-left: rgb(208, 158, 255);
+}
+
+.popout {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: -20px;
+  left: 67px;
+  text-align: center;
+  background-color: rgb(233, 210, 255);
+  padding: 0.25em 1em;
+  border-radius: 0 5px 5px 0;
+  border: 3px solid black;
+  border-left: rgb(233, 210, 255);
+}
+
+.popout span {
+  margin-top: -5px;
+}
+
+.popout .checkbox {
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+
+.apply {
+  margin: 1em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

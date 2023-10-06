@@ -1,0 +1,54 @@
+.board-alert {
+  width: 680px;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: calc(var(--drop-area-height) + 5px);
+  left: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  display: none;
+}
+
+.board-alert .text-box {
+  background-color: white;
+  padding: 1em;
+  border: 3px solid var(--purple);
+  border-radius: 10px;
+}
+
+.board-alert .block1 {
+  text-align: center;
+  font-size: 18px;
+}
+
+.board-alert .button-purple {
+  margin: 20px 50px;
+}
+
+
+.board-alert.game-over .winner {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.board-warn {
+  left: 50%;
+  top: 0;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: all 50ms linear;
+}
+
+.board-warn.show {
+  top: var(--drop-area-height);
+  opacity: 1;
+}
+
+.board-warn .alarm {
+  width: 30px;
+  margin-right: 0.5em;
+  filter: invert(22%) sepia(99%) saturate(7417%) hue-rotate(3deg) brightness(104%) contrast(119%);
+}
