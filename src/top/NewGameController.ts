@@ -1,6 +1,4 @@
 import { BoardController } from "../board/BoardController";
-import { GameOverState } from "../board/states/GameOverState";
-import { PlacingState } from "../board/states/PlacingState";
 
 export class NewGameController {
   public sprite = document.querySelector('.button-purple.restart') as HTMLElement;

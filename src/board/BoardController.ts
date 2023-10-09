@@ -1,15 +1,8 @@
 import { coord } from "./Coord";
 import { Game } from "./Game";
-import { DroppingState } from "./states/DroppingState";
-import { GameOverState } from "./states/GameOverState";
-import { PlacingState } from "./states/PlacingState";
 import { ListenerData } from './states/PlacingState'
-import { StartState } from "./states/StartState";
-import { TimerController } from "./timer/TimerController";
 import { GameData } from "../constants";
 import { UndoController } from "./UndoController";
-
-type State = PlacingState | DroppingState | GameOverState | StartState;
 
 /**
  * in charge of managing where the mouse is at all times

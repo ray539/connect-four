@@ -1,4 +1,4 @@
-import {Coord, coord } from "./Coord";
+import { coord } from "./Coord";
 import { Token } from "./Token";
 
 export class DroppingToken extends Token {

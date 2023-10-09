@@ -1,4 +1,4 @@
-import { BoardController } from "../BoardController";
+
 import { DroppingState } from "./DroppingState";
 import { PlacingToken } from "../PlacingToken";
 import { Game } from "../Game";
@@ -22,7 +22,7 @@ export class PlacingState {
   public eventListeners: ListenerData[] = [
     {
       type: 'click',
-      listener: (e: MouseEvent) => this.dropToken(-1)
+      listener: () => this.dropToken(-1)
     },
   ]
 

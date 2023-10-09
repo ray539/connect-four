@@ -43,7 +43,7 @@ export class SettingsController {
     me.showing = false;
   }
 
-  public validateData(timerDuration:number, infin: boolean, roundsEachGame: number, allowUndoRedo: boolean) {
+  public validateData(timerDuration:number, infin: boolean, roundsEachGame: number) {
     if (timerDuration <= 0) {
       if (!infin) {
         return {
@@ -73,7 +73,7 @@ export class SettingsController {
     let allowUndoRedo = (this.menu.querySelector('.allow') as HTMLInputElement).checked;
 
     me.message.innerHTML = ''
-    let {success, message} = this.validateData(timerDuration, infin, roundsEachGame, allowUndoRedo);
+    let {success, message} = this.validateData(timerDuration, infin, roundsEachGame);
     if (success) {
       me.message.innerHTML += '<img src="public/check-circle.svg" width="30" class="icon">'
     } else {

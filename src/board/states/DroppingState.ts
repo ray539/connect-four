@@ -1,8 +1,6 @@
-import { BoardController } from '../BoardController'
+
 import { DroppingToken } from "../DroppingToken";
 import { Game } from '../Game';
-import { GameOverState } from "./GameOverState";
-import { PlacingState } from './PlacingState'
 
 export class DroppingState {
   public canvas: HTMLElement;

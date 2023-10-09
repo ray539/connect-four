@@ -1,5 +1,4 @@
 import { NUMCOLS } from "../../constants";
-import { BoardController } from "../BoardController";
 import { Game } from "../Game";
 import { PlacingState } from "../states/PlacingState";
 
