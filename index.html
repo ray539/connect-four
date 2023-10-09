@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./src/css/constants.css">
     <script type="module" src="/src/main.ts"></script>
     <title>Connect Four</title>
+    <!-- load in images -->
+    <img src="src/img/check-circle.svg" style="display:none">
+    <img src="src/img/cross-circle.svg" style="display:none">
   </head>
   <body>
 
@@ -37,7 +40,7 @@
           </ul>
 
           <div class="button-container">
-            <img src="up-arrow.svg" width="50px" class="up-arrow">
+            <img src="/up-arrow.svg" width="50px" class="up-arrow">
             <button type="button" class="button-purple apply">APPLY TO NEXT GAME</button>
           </div>
 
@@ -81,16 +84,6 @@
         <link rel="stylesheet" href="./src/css/board.css">
         <link rel="stylesheet" href="./src/css/board-alerts.css">
   
-        <!-- <div class="board-alert game-over">
-          <div class="winner">
-            RED WON
-          </div>
-          <div class="press-restart">
-            press restart for another game
-          </div>
-          <div class="spacer2"></div>
-        </div> -->
-
         <div class="board-warn alert">
           <img src="/alarm-clock.png" class="alarm"> TIMES UP!
         </div>
@@ -108,13 +101,13 @@
         </div>
 
         <div class="undo-redo-button left">
-          <img src="arrow-left.svg" class="arrow" draggable="false">
+          <img src="/arrow-left.svg" class="arrow" draggable="false">
           UNDO
         </div>
 
         <div class="undo-redo-button right">
           REDO
-          <img src="arrow-left.svg" class="arrow" draggable="false">
+          <img src="/arrow-left.svg" class="arrow" draggable="false">
         </div>
   
       </div>

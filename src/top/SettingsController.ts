@@ -75,9 +75,9 @@ export class SettingsController {
     me.message.innerHTML = ''
     let {success, message} = this.validateData(timerDuration, infin, roundsEachGame);
     if (success) {
-      me.message.innerHTML += '<img src="check-circle.svg" width="30" class="icon">'
+      me.message.innerHTML += '<img src="./src/img/check-circle.svg" width="30" class="icon">'
     } else {
-      me.message.innerHTML += '<img src="cross-circle.svg" width="30" class="icon">'
+      me.message.innerHTML += '<img src="./src/img/cross-circle.svg" width="30" class="icon">'
     }
     me.message.innerHTML += message;
     me.message.classList.toggle('show', true);
