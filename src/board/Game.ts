@@ -88,7 +88,6 @@ export class Game {
   }
 
   public getScore(turn: T) {
-    console.log(turn, this.redScore, this.yellowScore)
     if (turn == 'R') {
       return this.redScore;
     } else return this.yellowScore;
@@ -173,7 +172,6 @@ export class Game {
 
   public undo() {
     if (this.pointer <= 1) {
-      console.log('can\'t undo');
       return;
     }
 
@@ -196,7 +194,6 @@ export class Game {
 
   public redo() {
     if (this.pointer >= this.gameSaves.length) {
-      console.log('can\'t redo');
       return;
     }
     this.pointer += 1;
