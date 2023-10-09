@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/connect-four/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
+    <title>Connect Four</title>
+    <script type="module" crossorigin src="/connect-four/assets/index-4a6fb766.js"></script>
+    <link rel="stylesheet" href="/connect-four/assets/index-931ffcb9.css">
+  </head>
+  <body>
+
+    <div class="top-container">
+
+        <!-- start of menu -->
+        <div class="menu">
+          
+          <ul>
+            <li>
+              Timer Duration
+              <div class="timer-duration-wrapper">
+                <input class="number-input timer-duration" type="number" value="30" >
+                <div class="popout">
+                  <span>&infin;</span>
+                  <input class="checkbox infin" type="checkbox">
+                </div>
+              </div>
+            </li>
+            <li>
+              Best of
+              <input class="number-input rounds-each-game" type="number" value="3">
+            </li>
+            <li>
+              Allow undo / redo
+              <input class="checkbox allow" type="checkbox">
+            </li>      
+          </ul>
+
+          <div class="button-container">
+            <img src="/connect-four/assets/up-arrow-2435f50f.svg" width="50px" class="up-arrow">
+            <button type="button" class="button-purple apply">APPLY TO NEXT GAME</button>
+          </div>
+
+          <div class="alert message">
+          </div>
+
+
+          
+        </div>
+        <!-- end of menu -->
+
+      
+      <button class="button-purple settings">SETTINGS</button>
+      <div class="thing">
+        <div class="circle-small red"></div>
+        <div class="circle-small yellow"></div>
+        <div class="circle-small yellow"></div>
+        <div class="circle-small red"></div>
+      </div>
+      <button class="button-purple restart">NEW GAME</button>
+    </div>
+  
+    
+    <section class="middle">
+      
+      <div class="scoreboard-wrapper-left">
+  
+        <div class="scoreboard">
+          <span class="player">PLAYER 1</span>
+          <span class="player-score red-player">0</span>
+        </div>
+        <div class = "circle-large red">
+          <!-- smiley face -->
+        </div>
+      </div>
+  
+      <div class="spacer"></div>
+  
+      
+      <div class="board-wrapper">
+        
+        
+  
+        <!-- <div class="board-alert game-over">
+          <div class="winner">
+            RED WON
+          </div>
+          <div class="press-restart">
+            press restart for another game
+          </div>
+          <div class="spacer2"></div>
+        </div> -->
+
+        <div class="board-warn alert">
+          <img src="/connect-four/alarm-clock.png" class="alarm"> TIMES UP!
+        </div>
+
+        <div class="drop-area"></div>
+        <img src="/connect-four/assets/board-abe7d572.svg" draggable="false" class="board-img">
+        <div class="timer">
+          <span class="player-turn">PLAYER 1'S TURN</span>
+          <span class="player-turn-timer"></span>
+          <svg class="tip" viewBox="0 147 200 200" width="200">
+            <polygon points="0,200 200,200 100,150" fill="currentColor"></polygon>
+            <line x1="0" y1="200" x2="100" y2="150" stroke="black" stroke-width="3px"></line>
+            <line x1="100" y1="150" x2="200" y2="200" stroke="black" stroke-width="3px"></line>
+          </svg>
+        </div>
+
+        <div class="undo-redo-button left">
+          <img src="/connect-four/assets/arrow-left-25c7f9e8.svg" class="arrow" draggable="false">
+          UNDO
+        </div>
+
+        <div class="undo-redo-button right">
+          REDO
+          <img src="/connect-four/assets/arrow-left-25c7f9e8.svg" class="arrow" draggable="false">
+        </div>
+  
+      </div>
+  
+      <div class="spacer"></div>
+  
+      <div class="scoreboard-wrapper-right">
+        <div class = "circle-large yellow">
+          <!-- smiley face -->
+        </div>
+        <div class="scoreboard">
+          <span class="player">PLAYER 2</span>
+          <span class="player-score yellow-player">0</span>
+        </div>
+      </div>
+    </section>
+    <div class="table">
+      
+    </div>
+  
+  </body>
+</html>
