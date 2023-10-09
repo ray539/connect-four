@@ -7,7 +7,10 @@
     
     
     <title>Connect Four</title>
-    <script type="module" crossorigin src="/connect-four/assets/index-5e42d35c.js"></script>
+    <!-- load in images -->
+    <img src="/connect-four/assets/check-circle-23c4444b.svg" style="display:none">
+    <img src="/connect-four/assets/cross-circle-3778e857.svg" style="display:none">
+    <script type="module" crossorigin src="/connect-four/assets/index-903d1671.js"></script>
     <link rel="stylesheet" href="/connect-four/assets/index-931ffcb9.css">
   </head>
   <body>
@@ -39,7 +42,7 @@
           </ul>
 
           <div class="button-container">
-            <img src="up-arrow.svg" width="50px" class="up-arrow">
+            <img src="/connect-four/up-arrow.svg" width="50px" class="up-arrow">
             <button type="button" class="button-purple apply">APPLY TO NEXT GAME</button>
           </div>
 
@@ -83,16 +86,6 @@
         
         
   
-        <!-- <div class="board-alert game-over">
-          <div class="winner">
-            RED WON
-          </div>
-          <div class="press-restart">
-            press restart for another game
-          </div>
-          <div class="spacer2"></div>
-        </div> -->
-
         <div class="board-warn alert">
           <img src="/connect-four/alarm-clock.png" class="alarm"> TIMES UP!
         </div>
@@ -110,13 +103,13 @@
         </div>
 
         <div class="undo-redo-button left">
-          <img src="arrow-left.svg" class="arrow" draggable="false">
+          <img src="/connect-four/arrow-left.svg" class="arrow" draggable="false">
           UNDO
         </div>
 
         <div class="undo-redo-button right">
           REDO
-          <img src="arrow-left.svg" class="arrow" draggable="false">
+          <img src="/connect-four/arrow-left.svg" class="arrow" draggable="false">
         </div>
   
       </div>
